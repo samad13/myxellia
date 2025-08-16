@@ -8,7 +8,7 @@ export function PropertyCard({ image, alt }: PropertyCardProps) {
   return (
     <div>
       <img
-        src={image || "/placeholder.svg"}
+        src={image}
         alt={alt}
         className="w-full h-full object-cover"
       />

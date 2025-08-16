@@ -14,7 +14,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-50 ">
       <Header />
-      <Navigation />
+      <Navigation /> 
 
       <div className="p-4 md:p-6 mt-[128px]">
         <h1 className="text-2xl font-semibold text-[#191919] mb-8">
