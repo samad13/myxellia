@@ -6,8 +6,8 @@ import { StatsCard } from "@/components/stats-card";
 import { PropertyCard } from "@/components/property-card";
 import ListOverview from "@/components/svgs/listOverview";
 import ListOverviewUser from "@/components/svgs/listOverviewUser";
-import{listingsStats, usersStats} from "@/hooks/startCardHooks";
-import { properties } from "@/hooks/propertyCardHooks";
+import{listingsStats, usersStats} from "@/hooks/useStatCard";
+import { properties } from "@/hooks/usePropertyCard";
 
 export default function Dashboard() {
   
@@ -42,13 +42,14 @@ export default function Dashboard() {
         </div>
 
       
-        <div className="mt-8">
+        <div className="mt-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {properties.map((property, index) => (
               <PropertyCard
                 key={index}
+                title={property.title}
                 label={property.label}
-                image={property.image}
+               images={property.images}
                 alt={property.alt}
               />
             ))}

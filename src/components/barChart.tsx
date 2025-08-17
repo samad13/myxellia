@@ -5,7 +5,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { chartConfig, chartData } from "@/hooks/salesoverviewHooks";
+import { chartConfig, chartData } from "@/hooks/useSalesoverview";
 const Chart = () => {
   return (
     <> <ChartContainer
