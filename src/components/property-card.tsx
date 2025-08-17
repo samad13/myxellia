@@ -25,7 +25,7 @@ export function PropertyCard({ title, label, images, alt }: PropertyCardProps) {
         <img
           src={images[currentImageIndex]}
           alt={alt}
-          className="w-full h-full object-cover rounded-xl transition-all duration-300"
+          className="w-full h-full object-cover rounded-xl"
         />
         {images.length > 1 && (
           <>
