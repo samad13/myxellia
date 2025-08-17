@@ -67,12 +67,3 @@ export function PropertyCard({ title, label, images, alt }: PropertyCardProps) {
   );
 }
 
-// <Card className="overflow-hidden">
-//   <div className="h-48  relative">
-//     <img src={image } alt={alt} className="w-full h-full object-cover  rounded-xl" />
-//     <div className="absolute top-4 left-4 bg-white px-2 py-1 rounded text-xs font-medium">{label}</div>
-//     <div className="absolute bottom-4 left-4 text-white">
-//       <h3 className="font-semibold">{title}</h3>
-//     </div>
-//   </div>
-// </Card>
